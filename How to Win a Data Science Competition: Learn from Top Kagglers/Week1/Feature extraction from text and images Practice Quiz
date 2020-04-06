@@ -1,0 +1,38 @@
+1.Question 1
+TF-IDF is applied to a matrix where each column represents a word, each row represents a document, 
+and each value shows the number of times a particular word occurred in a particular document. Choose the correct statements.
+
++ IDF scales features inversely proportionally to a number of word occurrences over documents:
+Purpose of IDF is to decrease importance of most frequent words.
+
++ TF normalizes sum of the row values to 1 :
+
+
+2.Question 2
+What of these methods can be used to preprocess texts?
+
++ Lemmatization :
+Lemmatization is used to reduce inflectional forms and sometimes derivationally related forms of a word to a common base form.
+
++ Lowercase transformation :
+Lowercase is used to unite words written in UPPERCASE and lowercase.
+
++ Stopwords removal :
+After feature generation stopwords result in useless features that interfere with useful ones.
+
++ Stemming :
+Stemming is used to reduce inflectional forms and sometimes derivationally related forms of a word to a common base form.
+
+
+3.Question 3
+What is the main purpose of Lemmatization and Stemming?
+
++ To reduce inflectional forms and sometimes derivationally related forms of a word to a common base form.
+this is the exact purpose of Lemmatization and Stemming!
+
+
+4.Question 4
+To learn Word2vec embeddings we need ...
+
++Text corpora :
+To learn more about word embeddings.
