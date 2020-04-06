@@ -1,53 +1,44 @@
-Coursera
+1.Question 1 : What type does a feature with values: [‘low’, ‘middle’, ‘high’] most likely have?
 
-Explore
-What do you want to learn?
-
-1.Question 1
-What type does a feature with values: [‘low’, ‘middle’, ‘high’] most likely have?
-
-Ordinal (ordered categorical)
++ Ordinal (ordered categorical)
 
 
-2.Question 2
-Suppose you have a dataset X, and a version of X where each feature has been standard scaled.
+2.Question 2 : Suppose you have a dataset X, and a version of X where each feature has been standard scaled.
 For which model types training or testing quality can be much different depending on the choice of the dataset?
 
-Linear models :
++Linear models :
 There are two reasons for this: first, amount of regularization applied to a feature depends on the feature's scale. 
 Second, optimization methods can perform differently depending on relative scale of features.
 
-Neural network :
++ Neural network :
 There are two reasons for this: first, amount of regularization applied to a feature depends on the feature's scale. 
 Second, optimization methods can perform differently depending on relative scale of features.
 
-Nearest neighbours :
++ Nearest neighbours :
 The reason for it is that the scale of features impacts the distance between samples. 
 Thus, with different scaling of the features nearest neighbors for a selected object can be very different.
 
 
-3.Question 3
-Suppose we want to fit a GBDT model to a data with a categorical feature. 
+3.Question 3 :Suppose we want to fit a GBDT model to a data with a categorical feature. 
 We need to somehow encode the feature. Which of the following statements are true?
 
-Depending on the dataset either of label encoder or one-hot encoder could be better.
++ Depending on the dataset either of label encoder or one-hot encoder could be better.
 
-4.Question 4
-What can be useful to do about missing values?
 
-Impute with a feature mean :
+4.Question 4 :What can be useful to do about missing values?
+
++ Impute with a feature mean :
 This is one of the most frequent ways to deal with missing values.
 
-Replace them with a constant (-1/-999/etc.) :
++ Replace them with a constant (-1/-999/etc.) :
 This is one of the most frequent ways to deal with missing values.
 
-
-Reconstruct them (for example train a model to predict the missing values) :
++ Reconstruct them (for example train a model to predict the missing values) :
 This one is tricky, but sometimes it can prove useful.
 
-Nothing, but use a model that can deal with them out of the box:
++ Nothing, but use a model that can deal with them out of the box:
 Some models like XGBoost and CatBoost can deal with missing values out-of-box. 
 These models have special methods to treat them and a model's quality can benefit from it.
 
-Remove rows with missing values :
++ Remove rows with missing values :
 This one is possible, but it can lead to loss of important samples and a quality decrease.
